@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SocialBook</title>
+  <title>ProsperBook</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body>
+  <!--navbar starts here-->
   <nav>
     <div class="nav-left">
-      <img src="images/logo.png" alt="" srcset="" class="logo">
+      <img src="images/logo.png" class="logo">
       <ul>
         <li><img src="images/notification.png" alt=""></img></li>
         <li><img src="images/inbox.png" alt=""></img></li>
@@ -22,23 +23,68 @@
     </div>
     <div class="nav-right">
       <div class="search-box">
-        <img src="images/search.png" alt="" srcset="">
-        <input type="text" placeholder="Search" name="" id="">
+        <img src="images/search.png">
+        <input type="text" placeholder="Search">
       </div>
-      <div class="nav-user-icon online">
-        <img src="images/profile-pic.png" alt="" srcset="">
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img src="images/profile-pic.png">
       </div>
     </div>
+     <!--settings-menu starts here-->
+    <div class="settings-menu">
+      <div id="dark-btn" class="dark-btn-on">
+        <span></span>
+      </div>
+      <div class="settings-menu-inner">
+        <div class="user-profile">
+          <img src="images/profile-pic.png">
+          <div>
+            <p>Omage prosper</p>
+            <a href="#">See your profile</a>
+          </div>
+      </div>
+      <hr>
+      <div class="user-profile">
+        <img src="images/feedback.png">
+        <div>
+          <p>Give Feedback</p>
+          <a href="#">Help us to improve the new design</a>
+        </div>
+      </div>
+      <hr>
+      <div class="settings-links">
+        <img src="./images/setting.png"  class="settings-icon">
+        <a href="#">Settings & Privacy <img src="./images/arrow.png" width="10px"></a>
+      </div>
+
+      <div class="settings-links">
+        <img src="./images/help.png"  class="settings-icon">
+        <a href="#">Help & Support <img src="./images/arrow.png" width="10px"></a>
+      </div>
+
+      <div class="settings-links">
+        <img src="./images/display.png"  class="settings-icon">
+        <a href="#">Display & Accesibility <img src="./images/arrow.png" width="10px"></a>
+      </div>
+
+      <div class="settings-links">
+        <img src="./images/logout.png"  class="settings-icon">
+        <a href="#">logout <img src="./images/arrow.png" width="10px"></a>
+      </div>
+      </div>
+  </div>
+   <!--settings-menu ends here-->
   </nav>
+  <!--navbar ends here--> 
   <div class="container">
     <!-- ========left-sidebar========== -->
     <div class="left-sidebar">
       <div class="img-links">
-        <a href="#"><img src="images/news.png" alt="" srcset=""> Lates News</a>
-        <a href="#"><img src="images/friends.png" alt="" srcset=""> Friends</a>
-        <a href="#"><img src="images/group.png" alt="" srcset=""> Group</a>
-        <a href="#"><img src="images/marketplace.png" alt="" srcset=""> Marketplace</a>
-        <a href="#"><img src="images/watch.png" alt="" srcset=""> Watch</a>
+        <a href="#"><img src="images/news.png"> Lates News</a>
+        <a href="#"><img src="images/friends.png"> Friends</a>
+        <a href="#"><img src="images/group.png"> Group</a>
+        <a href="#"><img src="images/marketplace.png"> Marketplace</a>
+        <a href="#"><img src="images/watch.png"> Watch</a>
         <a href="#">See More</a>
       </div>
       <div class="shortcut-links">
@@ -58,49 +104,199 @@
         </div>
         <div class="story story2">
           <img src="images/member-1.png" alt="">
-          <p>Omitunde</p>
+          <p>Adura</p>
         </div>
         <div class="story story3">
           <img src="images/member-2.png" alt="">
-          <p>Dipson</p>
+          <p>tolu</p>
         </div>
         <div class="story story4">
           <img src="images/member-3.png" alt="">
-          <p>Tosin</p>
+          <p>anita</p>
         </div>
         <div class="story story5">
           <img src="images/member-4.png" alt="">
-          <p>Samuel</p>
+          <p>prosper</p>
         </div>
       </div>
 
       <div class="write-post-container">
-        <div class="user-profile">
-          <img src="images/profile-pic.png" alt="">
-          <div>
-            <p>Elisha Dawodu</p>
-            <small>Public <i class="fas fa-caret-down"></i></small>
-          </div>
-        </div>
-        <div class="post-input-container">
-          <textarea name="" id="" cols="30" rows="3" placeholder="What's on your mind, Elisha?"></textarea>
-          <div class="add-post-links">
-            <a href=""><img src="images/live-video.png" alt=""> live Video</a>
-            <a href=""><img src="images/photo.png" alt=""> Photo/Video</a>
-            <a href=""><img src="images/feeling.png" alt=""> Feeling/Activity</a>
-          </div>
-        </div>
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>Omage prosper</p>
+                <small>Public <i class="fas fa-caret-down"></i></small>
+              </div>
+            </div>
+            <div class="post-input-container">
+              <textarea name="" id="" cols="30" rows="3" placeholder="What's on your mind, Omage?"></textarea>
+              <div class="add-post-links">
+                <a href=""><img src="images/live-video.png" alt=""> live Video</a>
+                <a href=""><img src="images/photo.png" alt=""> Photo/Video</a>
+                <a href=""><img src="images/feeling.png" alt=""> Feeling/Activity</a>
+              </div>
+            </div>
       </div>
-      <div class="post-container">
-        <div class="user-profile">
-          <img src="images/profile-pic.png" alt="">
-          <div>
-            <p>Elisha Dawodu</p>
-            <small>Public <i class="fas fa-caret-down"></i></small>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                  <p>Omage prosper</p>
+                  <span>June 24, 13:40pm</span>
+                </div>
+              </div>
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          
+            <p class="post-text">Subscribe <span>@ Easy Tutorials</span>Youtube Channel To Watch More Videos On 
+              Website Development and UI Designs. <a href="#">LogicTech"</a> <a href="#">#YouTubeChannel</a></p>
+              <img src="./images/feed-image-1.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-actions">
+              <div><img src="./images/like-blue.png">120</div>
+              <div><img src="./images/comments.png">45</div>
+              <div><img src="./images/share.png">20</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="./images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+              
+            </div>
+          </div>
+              
+          </div>
+
+          <!---second-post-container starts here-->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                  <p>Omage prosper</p>
+                  <span>June 24, 13:40pm</span>
+                </div>
+              </div>
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+          
+            <p class="post-text">Like and Share this video with friends</span> facebook page on your post.
+               Ask your doubts in the comments <a href="#">LogicTech"</a> <a href="#">#YoutubeChannel</a></p>
+              <img src="./images/feed-image-2.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-actions">
+              <div><img src="./images/like.png">150</div>
+              <div><img src="./images/comments.png">400</div>
+              <div><img src="./images/share.png">90</div>
+            </div>
+            <div class="post-profile-icons">
+              <img src="./images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+              
+            </div>
+          </div>
+              
+          </div>
+         <!--second post-container ends here-->
+
+         <!--third post-container starts here-->
+         <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>Omage prosper</p>
+                <span>June 24, 13:40pm</span>
+              </div>
+            </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+        
+          <p class="post-text">Like and Share this video with friends</span> facebook page on your post.
+             Ask your doubts in the comments <a href="#">LogicTech"</a> <a href="#">#YoutubeChannel</a></p>
+            <img src="./images/feed-image-3.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-actions">
+            <div><img src="./images/like.png">300</div>
+            <div><img src="./images/comments.png">320</div>
+            <div><img src="./images/share.png">1000</div>
+          </div>
+          <div class="post-profile-icons">
+            <img src="./images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+            
           </div>
         </div>
-      </div>
-    </div>
+            
+        </div>
+        <!--third post-container ends here-->
+        <!--fourth post-container starts here-->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>Omage prosper</p>
+                <span>June 24, 13:40pm</span>
+              </div>
+            </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+        
+          <p class="post-text">Like and Share this video with friends</span> facebook page on your post.
+             Ask your doubts in the comments <a href="#">LogicTech"</a> <a href="#">#YoutubeChannel</a></p>
+            <img src="./images/feed-image-4.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-actions">
+            <div><img src="./images/like.png">300</div>
+            <div><img src="./images/comments.png">320</div>
+            <div><img src="./images/share.png">1000</div>
+          </div>
+          <div class="post-profile-icons">
+            <img src="./images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+            
+          </div>
+        </div>
+            
+        </div>
+        <!--fourth post-container ends here-->
+
+
+<!--fifth post-container starts here-->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="">
+              <div>
+                <p>Omage prosper</p>
+                <span>June 24, 13:40pm</span>
+              </div>
+            </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+        
+          <p class="post-text">Like and Share this video with friends</span> facebook page on your post.
+             Ask your doubts in the comments <a href="#">LogicTech"</a> <a href="#">#YoutubeChannel</a></p>
+            <img src="./images/feed-image-5.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-actions">
+            <div><img src="./images/like.png">300</div>
+            <div><img src="./images/comments.png">320</div>
+            <div><img src="./images/share.png">1000</div>
+          </div>
+          <div class="post-profile-icons">
+            <img src="./images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+            
+          </div>
+        </div>
+            
+        </div>
+        <!--fifth post-container ends here-->
+
+        <button type="button" class="load-more-btn">Load More</button>
+    </div><!--main content ends-->
 
     <!-- ==========right sidebar============= -->
     <div class="right-sidebar">
@@ -143,22 +339,26 @@
         <div class="online">
           <img src="images/member-1.png" alt="">
         </div>
-        <p>Abiodun Rasheed</p>
+        <p>Oni Adura</p>
       </div>
       <div class="online-list">
         <div class="online">
           <img src="images/member-2.png" alt="">
         </div>
-        <p>Erewa Augutus</p>
+        <p>Ahmed Tolu</p>
       </div>
       <div class="online-list">
         <div class="online">
           <img src="images/member-3.png" alt="">
         </div>
-        <p>Beezle ng</p>
+        <p>Jules Omage</p>
       </div>
     </div>
   </div>
+<div class="footer">
+  <p>Copyright 2021 - Easy Tutorials Youtube Channel</p>
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
